@@ -13,8 +13,13 @@ import answerRoutes from "./routes/Answers.js";
 import connectDB from "./Config/db.js";
 
 dotenv.config();
+const corsOptions = {
+  // origin: 'http://localhost:3000',
+  Credential: true,
+  // optionSuccessStatus: 200
+}
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 // connectDB();
 

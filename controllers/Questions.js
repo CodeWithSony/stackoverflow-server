@@ -17,7 +17,7 @@ export const AskQuestion = async (req, res) => {
 };
 
 export const getAllQuestions = async (req, res) => {
-  console.log("question")
+  // console.log("question")
   try {
     const questionList = await Question.find().sort({ askedOn: -1 });
     // we are putting all data from the question schema to the questionlist.
